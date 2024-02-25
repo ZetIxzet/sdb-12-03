@@ -10,7 +10,7 @@
 SELECT DISTINCT district FROM address
 WHERE district LIKE 'K%a' AND district NOT LIKE '% %' ;
 ```
-![Скриншот-1](https://github.com/ZetIxzet/sdb-12-02/blob/main/132126.png)
+![Скриншот-1](https://github.com/ZetIxzet/sdb-12-03/blob/main/153425.png)
 
 ### Задание 2
 
@@ -22,7 +22,7 @@ WHERE district LIKE 'K%a' AND district NOT LIKE '% %' ;
 SELECT * FROM payment
 WHERE CAST(payment_date AS DATE) BETWEEN '2005-06-15' AND '2005-06-18' AND amount > 10.00;
 ```
-![Скриншот-2](https://github.com/ZetIxzet/sdb-12-02/blob/main/132126.png)
+![Скриншот-2](https://github.com/ZetIxzet/sdb-12-03/blob/main/153450.png)
 
 ### Задание 3
 
@@ -34,7 +34,7 @@ WHERE CAST(payment_date AS DATE) BETWEEN '2005-06-15' AND '2005-06-18' AND amoun
 SELECT * FROM rental
 ORDER BY rental_date DESC, rental_id desc LIMIT 5;
 ```
-![Скриншот-3](https://github.com/ZetIxzet/sdb-12-02/blob/main/132126.png)
+![Скриншот-3](https://github.com/ZetIxzet/sdb-12-03/blob/main/153502.png)
 
 
 ### Задание 4
@@ -52,5 +52,5 @@ SELECT REPLACE(LOWER(first_name), 'll', 'pp') , LOWER(last_name)
 FROM customer
 WHERE first_name LIKE 'Kelly' OR first_name LIKE 'Willie' ;
 ```
-![Скриншот-4](https://github.com/ZetIxzet/sdb-12-02/blob/main/132126.png)
+![Скриншот-4](https://github.com/ZetIxzet/sdb-12-03/blob/main/153514.png)
 
